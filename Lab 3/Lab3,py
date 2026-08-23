@@ -1,0 +1,49 @@
+# lamba function
+x = lambda a : a + 10 
+print(x(5))
+
+x = lambda a, b : a * b 
+print(x(5, 6)) 
+
+x = lambda a, b, c : a + b + c 
+print(x(5, 6, 2)) 
+
+# array
+cars = ["Ford", "Volvo", "BMW"] 
+
+x = cars[0]  # access element using index
+print(x)
+
+cars[0] = "Toyota" # update 
+print(cars[0])
+
+x = len(cars) # length of array
+print(x)
+
+for x in cars: # loop through array for printing array elements
+    print(x) 
+    
+# file handling 
+
+# open file 
+f = open("demofile.txt","a") 
+f.write("Now the file has more content!") 
+f.close() 
+
+f = open("demofile.txt", "r") 
+print(f.read()) 
+
+f = open("demofile.txt", "w") 
+f.write("Woops! I have deleted the content!") 
+f.close() 
+
+f = open("demofile.txt", "r") 
+print(f.read()) 
+
+# module 
+import mymodule
+
+mymodule.greeting("Jonathan") 
+
+a = mymodule.person1["age"] 
+print(a)
